@@ -1,0 +1,106 @@
+
+.simpleTable {
+
+    thead {
+
+        tr {
+            background-color: var(--Main2);
+            color:#fff;
+        }
+    }
+
+    th {
+        font-weight: 500;
+        padding: 10px 15px;
+        vertical-align: middle;
+    }
+
+    td {
+         padding: 10px 15px;
+         vertical-align: middle;
+    }
+    tbody {
+       border-top: none !important;
+       background: #fff;
+
+       .nameList {
+
+            h6 {
+                margin-bottom: 3px;
+            }
+            p {
+                margin: 0;
+                color: #909090;
+                font-size: 14px;
+            }
+       }
+    }
+}
+
+.adsentUserList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .List {
+        text-decoration: none;
+        color: var(--Color);
+        background: #fff;
+        display: flex;
+        padding: 10px 15px;
+        border-radius: 8px;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .userName {
+            display: flex;
+            align-items: center;
+            width: 40%;
+
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50px;
+                margin-right: 10px;
+            }
+            h5 {
+               margin: 0;
+               font-size: 16px;
+            }
+        }
+        .totalAt {
+            display: flex;
+            align-items: center;
+            width: 60%;
+            justify-content: end;
+
+            .totalAtbody {
+
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            .timesheetbtn {
+                background: #AACBFE;
+                padding: 5px 10px;
+                font-size: 15px;
+                color: #fff;
+                border-radius: 8px;
+                margin-left: 20px;
+            }
+            
+        }
+    }
+}
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+   
+}
