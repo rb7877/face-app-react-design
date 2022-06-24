@@ -1,0 +1,232 @@
+
+.settingCard {
+    background: #fff;
+    padding: 20px 20px 0px 20px;
+    border: 1px solid #dfdfdf;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+    h2 {
+        font-size: 18px;
+        border-bottom: 1px solid #d0cdcd;
+        padding-bottom: 12px;
+        margin: 0;
+    }
+   
+   ul {
+       list-style:none;
+       margin:0;
+       padding:0;
+
+       .List {
+            padding: 15px 0px;
+            position: relative;
+            cursor:pointer;
+
+            h5 {
+                font-size: 16px;
+                margin-bottom: 3px;
+                font-weight: normal;
+            }
+            p {
+                margin: 0;
+                font-size: 14px;
+                color: #8d8a8a;
+            }
+            .iconArrow {
+                position:absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(-0%, -50%);
+            }
+       }
+
+       
+
+   }
+
+}
+
+
+
+.ctsPopup {
+
+    :global(.modal-dialog) {
+        
+        :global(.modal-content) {
+            border:none;
+            border-radius: 8px;
+            
+            :global(.modal-header) {
+                background-color:var(--Main2);
+                color:#fff;
+                padding: 15px 20px;
+
+                :global(.btn-close) {
+                    color: #fff;
+                    filter: invert(338%) sepia(0%) saturate(2467%) hue-rotate(130deg) brightness(95%) contrast(320%);
+                    opacity: 1;
+                }
+            }
+            :global(.modal-body) {
+                padding: 20px 20px;
+
+                .formBox {
+                    margin-bottom: 15px;
+
+                    :global(.form-label) {
+                        margin: 0;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    :global(.form-control) {
+                        border: 1px solid #d7d7d7;
+                        border-radius: 8px;
+                        padding: 10px 12px;
+
+                        &:focus {
+                            box-shadow:none;
+                            border-color:var(--Main2);
+                        }
+                    }
+                    :global(.form-select) {
+                        border: 1px solid #d7d7d7;
+                        border-radius: 8px;
+                        padding: 10px 12px;
+
+                        &:focus {
+                            box-shadow:none;
+                            border-color:var(--Main2);
+                        }
+                    }
+                }
+            }
+            
+            :global(.modal-footer) {
+                padding: 25px 15px;
+                justify-content: center;
+
+                .leftft {
+
+                    button {
+                        color:var(--Main2);
+                        font-size:18px;
+                        font-weight:600;
+                    }
+                }
+                .rightft {
+                    text-align: right;
+
+                    :global(.btn) {
+                        padding: 10px 30px;
+                        margin-left: 15px;
+                        border-radius: 8px;
+                    }
+                    .close {
+                        background:#AACBFE;
+                        color:#fff;
+                    }
+                    .apply {
+                        background:var(--Main2);
+                        color:#fff;
+                        border-color:var(--Main2);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.timeCheckbox {
+
+    .cheBox {
+        width: 100%;
+        background: #faf8f8;
+        margin: 5px 0px;
+        padding: 15px 15px;
+        border-radius: 8px;
+        border: 1px solid #dadada;
+    }
+}
+
+.formClass {
+    height: 50px;
+    border-radius: 8px;
+    border-color: #d2d2d2;
+    background-color: #fff;
+
+    &:focus {
+        border-color:var(--Main2);
+        box-shadow:none;
+    }
+}
+.passwordAction {
+    font-size: 22px;
+    position: absolute;
+    right: 0px;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    color: #5e5c5c;
+    cursor: pointer;
+}
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+
+    .ctsPopup {
+
+        :global(.modal-dialog) {
+            
+            :global(.modal-content) {
+                
+                :global(.modal-body) {
+
+                    .formBox {
+
+                        :global(.form-label) {
+                            margin-bottom:10px;
+                        }
+                    }
+                }
+                
+                
+                :global(.modal-footer) {
+                    display: block;
+
+                    .leftft {
+
+                        button {
+                            color:var(--Main2);
+                            font-size:18px;
+                            font-weight:600;
+                        }
+                    }
+                    .rightft {
+                        display: flex;
+                        margin-top: 15px;
+                        flex-wrap: wrap;
+
+                        :global(.btn) {
+                            width: 100%;
+                            justify-content: center;
+
+                            &.close {
+                               margin:15px 0px 0px 0px;
+                               order: 1;
+                            }
+                            &.apply {
+                               margin: 0px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}

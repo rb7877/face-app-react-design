@@ -504,7 +504,7 @@ body {
   
     input {
 		opacity: 0;
-		margin-right:5px;
+		margin-right:8px;
 	  
 	    &:checked ~ .checkmark {
 		  background-color: var(--Main2);
@@ -516,7 +516,7 @@ body {
 	}
 	.checkmark {
 		position: absolute;
-		top: 5px;
+		top: 4px;
 		left: 0;
 		height: 17px;
 		width: 17px;
@@ -664,7 +664,7 @@ body {
     
     .pageWrapper {
         margin-left: 0px;
-        padding:10px 15px 0px 25px;
+        padding:10px 15px 0px 15px;
 
         :global(.card) {
             background-color: transparent;

@@ -37,64 +37,62 @@
     }
 }
 
-.adsentUserList {
-    list-style: none;
-    margin: 0;
-    padding: 0;
 
-    .List {
-        text-decoration: none;
-        color: var(--Color);
-        background: #fff;
+
+.staffCard {
+    text-decoration: none;
+    color: var(--Color);
+    background: #fff;
+    display: flex;
+    padding: 10px 15px;
+    border-radius: 8px;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #dfdfdf;
+
+    .userName {
         display: flex;
-        padding: 10px 15px;
-        border-radius: 8px;
         align-items: center;
-        margin-bottom: 15px;
+        width: 100%;
 
-        .userName {
-            display: flex;
-            align-items: center;
-            width: 40%;
-
-            img {
-                width: 40px;
-                height: 40px;
-                object-fit: cover;
-                border-radius: 50px;
-                margin-right: 10px;
-            }
-            h5 {
-               margin: 0;
-               font-size: 16px;
-            }
+        img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 10px;
+            padding: 3px;
+            border: 1px solid #d2caca;
         }
-        .totalAt {
-            display: flex;
-            align-items: center;
-            width: 60%;
-            justify-content: end;
+        .userBody {
+            width: 100%;
+            position: relative;
 
-            .totalAtbody {
-
-                p {
-                    margin: 0;
-                    font-size: 14px;
-                    line-height: 18px;
-                }
+            h5 {
+                margin-bottom: 5px;
+                font-size: 18px;
             }
-            .timesheetbtn {
-                background: #AACBFE;
-                padding: 5px 10px;
+            p {
+                margin:0;
                 font-size: 15px;
-                color: #fff;
-                border-radius: 8px;
-                margin-left: 20px;
             }
-            
+
+            .status {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 15px;
+                height: 15px;
+                background: #cdc9c9;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+
         }
     }
+    
 }
+
 
 //for search icon
 

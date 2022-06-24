@@ -6,6 +6,10 @@ import Header from "../../components/header/Header";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Footer from "../../components/footer/Footer";
 import { Card, Button, Row, Col, Modal, Form, Dropdown } from "react-bootstrap";
+import { FiArrowDown,FiArrowUp } from "react-icons/fi";
+import { RiSearchLine } from "react-icons/ri";
+import { FiFilter } from "react-icons/fi";
+
 import { NavLink } from "react-router-dom";
 // import DateRangePicker from 'rsuite/DateRangePicker';
 // import 'rsuite/styles/index.less';
@@ -21,31 +25,43 @@ export default function AllWorkplace() {
       <Sidebar />
       <section className={`${style.pageWrapper}`}>
         <Card>
-          <Card.Title>
+        <Card.Title>
             <Row className={`align-items-center ${style.rowTitle}`}>
               <Col className={`col-12 ${style.rowTitleLeft}`} lg={6}>
                 <h5>All workplaces</h5>
               </Col>
+             
+             
               <Col className={`col-12 ${style.rowTitleRight}`} lg={6}>
-             {/* <div>{instance}</div>  */}
-              <button className={`btn ${style.width50}`} >
-                  Filter
-              </button>
-              <Dropdown>
-                <Dropdown.Toggle id="dropdown-basic">
-                  Sort by
-                </Dropdown.Toggle>
+                <Col className={`${cx.rightSearch}`}>
+                  <div className={`${cx.searchbar}`}>
+                    <input className="form-control" type="search" placeholder="Search..." aria-label="Search"/>
+                    <RiSearchLine className={`${cx.ion}`}/>
+                  </div>
+                  <Dropdown>
+                    <Dropdown.Toggle id="dropdown-basic">
+                    <FiFilter /> Sort by
+                    </Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">A - Z</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Z - A</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Manager</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">A - Z</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Z - A</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Attention only</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Work hour</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Work hour</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Attendance</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Attendance</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Col>
               </Col>
+
             </Row>
           </Card.Title>
-          <Card.Body style={{ minHeight: "600px" }}>
+
+
+
+        <Card.Body style={{ minHeight: "600px" }}>
             <Row>
               <Col md={12} lg={6}>
                   <ul className={`${cx.adsentUserList}`}>
