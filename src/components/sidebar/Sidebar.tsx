@@ -13,6 +13,7 @@ import { SiWorkplace } from 'react-icons/si';
 import { MdCalendarToday } from 'react-icons/md';
 import { FiSettings } from 'react-icons/fi';
 import { FiUserCheck } from 'react-icons/fi';
+import { MdReportGmailerrorred } from 'react-icons/md';
 
 import { Accordion } from "react-bootstrap"
 
@@ -111,6 +112,17 @@ const Sidebar = (props:any) => {
                       <MdCalendarToday />
                     </div>
                     <div className={`${style.menuName}`}>Day planing </div>
+                </Accordion.Header>
+              </NavLink>
+          </Accordion.Item>
+          
+          <Accordion.Item eventKey="5">
+              <NavLink className={`${style.listLink}`} to="/reports">
+                <Accordion.Header>
+                    <div className={`${style.menuIcon}`}>
+                      <MdReportGmailerrorred />
+                    </div>
+                    <div className={`${style.menuName}`}>Reports </div>
                 </Accordion.Header>
               </NavLink>
           </Accordion.Item>

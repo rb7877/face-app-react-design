@@ -1,68 +1,17 @@
 
-.simpleTable {
-
-    thead {
-
-        tr {
-            background-color: var(--Main2);
-            color:#fff;
-        }
-    }
-
-    th {
-        font-weight: 500;
-        padding: 10px 15px;
-        vertical-align: middle;
-    }
-
-    td {
-         padding: 10px 15px;
-         vertical-align: middle;
-    }
-    tbody {
-       border-top: none !important;
-       background: #fff;
-
-       .nameList {
-
-            h6 {
-                margin-bottom: 3px;
-            }
-            p {
-                margin: 0;
-                color: #909090;
-                font-size: 14px;
-            }
-       }
-    }
-}
-
-
-
 .staffCard {
     text-decoration: none;
     color: var(--Color);
     background: #fff;
     display: flex;
-    padding: 10px 15px;
+    padding: 20px 20px;
     border-radius: 8px;
     align-items: center;
     margin-bottom: 15px;
     border: 1px solid #dfdfdf;
 
     .userName {
-        display: flex;
-        width: 100%;
 
-        img {
-            width: 75px;
-            height: 75px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-right: 10px;
-            padding: 3px;
-            border: 1px solid #d2caca;
-        }
         .userBody {
             width: 100%;
             position: relative;
@@ -79,33 +28,30 @@
             .status {
                 position: absolute;
                 right: 0;
-                bottom: 0;
+                top: 0;
                 width: 15px;
                 height: 15px;
                 background: #cdc9c9;
                 border-radius: 50px;
                 cursor: pointer;
             }
-            .actionDrop {
-                position:absolute;
-                right: 0;
-                top: 0;
 
-                :global(.dropdown-toggle) {
-                    background-color: transparent;
-                    padding: 0;
-                    border: none;
-                    color: var(--Color);
-                    font-size: 30px;
-                    line-height: 0px;
+            .btnNt {
+                background: var(--Main2);
+                border: 1px solid #dadada;
+                padding: 4px 8px;
+                color: #fff;
+                border-color: var(--Main2);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                margin-right: 5px;
+                font-size: 13px;
+                font-weight: normal;
+                margin-top: 10px;
 
-                    &:focus {
-                        box-shadow: none;
-                    }
-
-                    &:after {
-                        display:none;
-                    }
+                svg {
+                    margin-right: 5px;
                 }
             }
 
@@ -155,7 +101,6 @@
         }
     }
 }
-
 
 
 .ctsPopup {
@@ -246,15 +191,8 @@
         }
     }
 }
-.popupProfile {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-right: 10px;
-    padding: 3px;
-    border: 1px solid #d2caca;
-}
+
+
 .DeletePopup {
 
     :global(.modal-content) {
@@ -284,24 +222,44 @@
     }
 }
 
+
 /*=======================================================
 //////////////RESPONSIVE MEDIA QUERY START///////////////
 =======================================================*/
 
 @media (min-width: 576px) {
 
-.DeletePopup {
-    
-    :global(.modal-dialog) {
-        max-width: 330px;
+    .DeletePopup {
+        
+        :global(.modal-dialog) {
+            max-width: 330px;
+        }
     }
-}
-
+    
 }
 
 @media (max-width: 767px) {
 
-  
+    
+.rightSearch {
+    display:block;
+
+    .searchbar{
+        position: relative;
+        margin-left: 0px;
+        width: 100%;
+        margin-right: 15px;
+    }
+    
+    :global(.btn) {
+        padding: 8px 15px !important;
+        margin: 0px 5px !important;
+        min-width: 47% !important;
+        float: left;
+        margin-top: 10px !important;
+    }
+}
+
 .ctsPopup {
 
     :global(.modal-dialog) {
@@ -352,44 +310,6 @@
 
         }
     }
-}  
-.rightSearch {
-    display:block;
-
-    .searchbar{
-        position: relative;
-        margin-left: 0px;
-        width: 100%;
-        margin-right: 15px;
-    }
-    
-    :global(.btn) {
-        padding: 8px 15px !important;
-        margin: 0px 5px !important;
-        min-width: 47% !important;
-        float: left;
-        margin-top: 10px !important;
-    }
 }
-
-.adsentUserList {
-
-    .List {
-
-            .userName {
-                width: 100%;
-            }
-            .totalAt {
-                display: block;
-                width: 100%;
-
-                .timesheetbtn {
-                    margin-left: 0px;
-                    margin-top:10px;
-                }
-                
-            }
-        }
-    }
    
 }

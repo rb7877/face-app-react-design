@@ -85,12 +85,12 @@ export default function Workplace() {
                             <button className={`btn ${cx.btnNt}`} onClick={() => seteditWorkShow(true)}>
                               <MdModeEdit /> Edit
                             </button>
-                            <button className={`btn ${cx.btnNt}`}>
+                            <NavLink to="/devices" className={`btn ${cx.btnNt}`}>
                               <MdOutlineImportantDevices /> Devices
-                            </button>
-                            <button className={`btn ${cx.btnNt}`}>
+                            </NavLink>
+                            <NavLink to="/attendance" className={`btn ${cx.btnNt}`}>
                               <AiOutlineLock /> Attendance
-                            </button>
+                            </NavLink>
                           </div>
                           
                         </div>
@@ -108,12 +108,12 @@ export default function Workplace() {
                             <button className={`btn ${cx.btnNt}`} onClick={() => seteditWorkShow(true)}>
                               <MdModeEdit /> Edit
                             </button>
-                            <button className={`btn ${cx.btnNt}`}>
+                            <NavLink to="/devices" className={`btn ${cx.btnNt}`}>
                               <MdOutlineImportantDevices /> Devices
-                            </button>
-                            <button className={`btn ${cx.btnNt}`}>
+                            </NavLink>
+                            <NavLink to="/attendance" className={`btn ${cx.btnNt}`}>
                               <AiOutlineLock /> Attendance
-                            </button>
+                            </NavLink>
                           </div>
                           
                         </div>
@@ -131,12 +131,12 @@ export default function Workplace() {
                             <button className={`btn ${cx.btnNt}`} onClick={() => seteditWorkShow(true)}>
                               <MdModeEdit /> Edit
                             </button>
-                            <button className={`btn ${cx.btnNt}`}>
+                            <NavLink to="/devices" className={`btn ${cx.btnNt}`}>
                               <MdOutlineImportantDevices /> Devices
-                            </button>
-                            <button className={`btn ${cx.btnNt}`}>
+                            </NavLink>
+                            <NavLink to="/attendance" className={`btn ${cx.btnNt}`}>
                               <AiOutlineLock /> Attendance
-                            </button>
+                            </NavLink>
                           </div>
                           
                         </div>
@@ -154,12 +154,12 @@ export default function Workplace() {
                             <button className={`btn ${cx.btnNt}`} onClick={() => seteditWorkShow(true)}>
                               <MdModeEdit /> Edit
                             </button>
-                            <button className={`btn ${cx.btnNt}`}>
+                            <NavLink to="/devices" className={`btn ${cx.btnNt}`}>
                               <MdOutlineImportantDevices /> Devices
-                            </button>
-                            <button className={`btn ${cx.btnNt}`}>
+                            </NavLink>
+                            <NavLink to="/attendance" className={`btn ${cx.btnNt}`}>
                               <AiOutlineLock /> Attendance
-                            </button>
+                            </NavLink>
                           </div>
                           
                         </div>
@@ -208,6 +208,17 @@ export default function Workplace() {
                 </Col>
                 <Col lg={8}>
                   <Form.Control type="text" placeholder="Location" />
+                </Col>
+              </Form.Group>
+              <Form.Group
+                className={`row align-items-center ${cx.formBox}`}
+                controlId="formName"
+              >
+                <Col lg={4}>
+                  <Form.Label>Upload Documents</Form.Label>
+                </Col>
+                <Col lg={8}>
+                  <Form.Control type="file" placeholder="" />
                 </Col>
               </Form.Group>
             </div>
@@ -265,6 +276,17 @@ export default function Workplace() {
                 </Col>
                 <Col lg={8}>
                   <Form.Control type="text" placeholder="Location" />
+                </Col>
+              </Form.Group>
+              <Form.Group
+                className={`row align-items-center ${cx.formBox}`}
+                controlId="formName"
+              >
+                <Col lg={4}>
+                  <Form.Label>Upload Documents</Form.Label>
+                </Col>
+                <Col lg={8}>
+                  <Form.Control type="file" placeholder="" />
                 </Col>
               </Form.Group>
             </div>
