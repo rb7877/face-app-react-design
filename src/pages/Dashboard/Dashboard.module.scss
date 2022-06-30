@@ -1,227 +1,66 @@
 
-.staffCard {
-    text-decoration: none;
-    color: var(--Color);
-    background: #fff;
+
+.countCard {
     display: flex;
-    padding: 20px 20px;
+    border: 2px solid #e06202;  
+    position: relative;
+    min-height: 90px;
     border-radius: 8px;
-    align-items: center;
-    margin-bottom: 15px;
-    border: 1px solid #dfdfdf;
+    padding: 5px;
+    margin-bottom:20px;
 
-    .userName {
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 8px;
+    //     width: 2px;
+    //     height: 102%;
+    //     top:-1px;
+    //     background: #e06202;
+    //     transform: rotate(10deg);
+    // }
 
-        .userBody {
-            width: 100%;
-            position: relative;
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     right: 8px;
+    //     width: 2px;
+    //     height: 102%;
+    //     top: -1px;
+    //     background: #e06202;
+    //     transform: rotate(10deg);
+    // }
 
-            h5 {
-                margin-bottom: 5px;
-                font-size: 18px;
-            }
-            p {
-                margin:0;
-                font-size: 15px;
-            }
-
-            .status {
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 15px;
-                height: 15px;
-                background: #cdc9c9;
-                border-radius: 50px;
-                cursor: pointer;
-            }
-
-            .btnNt {
-                background: var(--Main2);
-                border: 1px solid #dadada;
-                padding: 4px 8px;
-                color: #fff;
-                border-color: var(--Main2);
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                margin-right: 5px;
-                font-size: 13px;
-                font-weight: normal;
-                margin-top: 10px;
-
-                svg {
-                    margin-right: 5px;
-                }
-            }
-
-        }
-    }
-    
-}
-
-
-//for search icon
-
-.rightSearch {
-    display: flex;
-    justify-content: end;
-
-    :global(.dropdown-menu) {
-        padding: 0px 0px;
-        border-radius: 8px;
-        border-color: #d2cfcf;
-
-        a {
-            padding: 8px 10px;
-            border-bottom: 1px solid #e4e4e4;
-
-            &:last-child{
-                border:none;
-            }
-        }
-    }
-
-    .searchbar{
-        position: relative;
-        margin-left: 10px;
-
-        :global(.form-control) {
-            border-radius: 8px;
-            padding: 8px 12px;
-        }
-
-        .ion{
-            position: absolute;
-            top: 50%;
-            font-size: 18px;
-            right: 12px;
-            cursor: pointer;
-            transform: translate(-0%, -50%);
-        }
-    }
-}
-
-
-.ctsPopup {
-
-    :global(.modal-dialog) {
-        
-        :global(.modal-content) {
-            border:none;
-            border-radius: 8px;
-            
-            :global(.modal-header) {
-                background-color:var(--Main2);
-                color:#fff;
-                padding: 15px 20px;
-
-                :global(.btn-close) {
-                    color: #fff;
-                    filter: invert(338%) sepia(0%) saturate(2467%) hue-rotate(130deg) brightness(95%) contrast(320%);
-                    opacity: 1;
-                }
-            }
-            :global(.modal-body) {
-                padding: 20px 20px;
-
-                .formBox {
-                    margin-bottom: 15px;
-
-                    :global(.form-label) {
-                        margin: 0;
-                        font-size: 18px;
-                        font-weight: 500;
-                    }
-                    :global(.form-control) {
-                        border: 1px solid #d7d7d7;
-                        border-radius: 8px;
-                        padding: 10px 12px;
-
-                        &:focus {
-                            box-shadow:none;
-                            border-color:var(--Main2);
-                        }
-                    }
-                    :global(.form-select) {
-                        border: 1px solid #d7d7d7;
-                        border-radius: 8px;
-                        padding: 10px 12px;
-
-                        &:focus {
-                            box-shadow:none;
-                            border-color:var(--Main2);
-                        }
-                    }
-                }
-            }
-            
-            :global(.modal-footer) {
-                padding: 25px 15px;
-                justify-content: center;
-
-                .leftft {
-
-                    button {
-                        color:var(--Main2);
-                        font-size:18px;
-                        font-weight:600;
-                    }
-                }
-                .rightft {
-                    text-align: right;
-
-                    :global(.btn) {
-                        padding: 10px 30px;
-                        margin-left: 15px;
-                        border-radius: 8px;
-                    }
-                    .close {
-                        background:#AACBFE;
-                        color:#fff;
-                    }
-                    .apply {
-                        background:var(--Main2);
-                        color:#fff;
-                        border-color:var(--Main2);
-                    }
-                }
-            }
-
-        }
-    }
-}
-
-
-.DeletePopup {
-
-    :global(.modal-content) {
+    span {
+        width: 40%;
+        display: block;
         text-align: center;
-        padding: 0px 0px;
-        border: none;
-        border-radius: 10px;
+        line-height: 80px;
+        background: #e06202;
+        color: #fff;
+        border-radius: 8px;
 
-        :global(.modal-body) {
-            padding: 20px 30px;
+        .icon {
+            font-size:34px;
+        }
+    }
 
-            p {
-                font-size: 17px;
-                color: #000;
-                font-weight: 500;
-            }
-            :global(.btn) {
-                margin: 0px 5px;
-                min-width: 100px;
-            }
-            .submitBtn {
-                background:var(--Main2);
-                border-color: var(--Main2);
-                color:#fff;
-            }
+
+    .countCardName {
+        width: 60%;
+        text-align: center;
+        padding: 7px 5px 5px 5px;
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 2px;
+            font-weight: 600;
+        }
+        p {
+            margin:0;
         }
     }
 }
-
 
 /*=======================================================
 //////////////RESPONSIVE MEDIA QUERY START///////////////
@@ -229,87 +68,11 @@
 
 @media (min-width: 576px) {
 
-    .DeletePopup {
-        
-        :global(.modal-dialog) {
-            max-width: 330px;
-        }
-    }
     
 }
 
 @media (max-width: 767px) {
 
-    
-.rightSearch {
-    display:block;
-
-    .searchbar{
-        position: relative;
-        margin-left: 0px;
-        width: 100%;
-        margin-right: 15px;
-    }
-    
-    :global(.btn) {
-        padding: 8px 15px !important;
-        margin: 0px 5px !important;
-        min-width: 47% !important;
-        float: left;
-        margin-top: 10px !important;
-    }
-}
-
-.ctsPopup {
-
-    :global(.modal-dialog) {
-        
-        :global(.modal-content) {
-            
-            :global(.modal-body) {
-
-                .formBox {
-
-                    :global(.form-label) {
-                        margin-bottom:10px;
-                    }
-                }
-            }
-            
-            
-            :global(.modal-footer) {
-                display: block;
-
-                .leftft {
-
-                    button {
-                        color:var(--Main2);
-                        font-size:18px;
-                        font-weight:600;
-                    }
-                }
-                .rightft {
-                    display: flex;
-                    margin-top: 15px;
-                    flex-wrap: wrap;
-
-                    :global(.btn) {
-                        width: 100%;
-                        justify-content: center;
-
-                        &.close {
-                           margin:15px 0px 0px 0px;
-                           order: 1;
-                        }
-                        &.apply {
-                           margin: 0px;
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-}
+   
    
 }

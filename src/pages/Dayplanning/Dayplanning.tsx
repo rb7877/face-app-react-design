@@ -9,10 +9,6 @@ import { Card, Button, Row, Col, Modal, Form, Dropdown } from "react-bootstrap";
 import { MdModeEdit } from "react-icons/md";
 import { AiOutlineDelete } from "react-icons/ai";
 import { Scheduler } from "@aldabil/react-scheduler";
-import Overview from "./scheduler-day";
-
-
-
 
 export default function Dayplanning() {
   return (
@@ -31,7 +27,7 @@ export default function Dayplanning() {
           </Card.Title>
           <Card.Body style={{ minHeight: "600px" }}>
             <Row className={`${cx.calendarBox}`}>
-                <Overview />
+
             </Row>
           </Card.Body>
         </Card>
